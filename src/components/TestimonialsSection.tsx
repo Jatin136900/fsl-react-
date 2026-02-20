@@ -4,54 +4,51 @@ import student1 from "@/assets/student1.jpg";
 import student2 from "@/assets/student2.jpg";
 import student3 from "@/assets/student3.jpg";
 
+import Jatin from '../../images/jatin.jpeg'
+import Dron from '../../images/dron.png'
+import PREKSHA from '../../images/PREKSHA.png'
+import RJ from '../../images/RJ.png'
+import Aakash from '../../images/Aakash.png'
+import Pradeep from '../../images/Pradeep.png'
+
+
+
 const testimonials = [
   {
-    name: "Rahul Sharma",
-    role: "Full Stack Developer",
-    company: "TCS",
-    image: student1,
+    name: "Jatin Verma",
+    image: Jatin,
     rating: 5,
-    text: "FSL completely transformed my career. The hands-on projects and expert mentorship helped me land a job at TCS within 2 months of completing the Full Stack course. Best investment I ever made!",
+    text: "I joined the coaching to learn Frontend Development and UI/UX Design, and it has been a great experience. From the basics of HTML, CSS, and JavaScript to advanced animations and responsive design, everything was taught in a clear and structured way. In UI/UX Design, we focused on user research, wireframing, and prototyping with a hands-on approach. The faculty was supportive, doubts were always resolved on time, and we got exposure to real-life projects. For anyone looking to start a career in design and development, this coaching is an excellent place to begin.",
   },
   {
-    name: "Priya Patel",
-    role: "Frontend Engineer",
-    company: "Infosys",
-    image: student2,
+    name: "Dron Pareek",
+    image: Dron,
     rating: 5,
-    text: "I had zero coding knowledge before joining FSL. The structured curriculum and supportive instructors made learning easy and fun. I'm now working as a Frontend Engineer at Infosys!",
+    text: "“The teaching style in this coaching is a bit different, which makes studying enjoyable. The teacher is very supportive, and the students are also helpful — if you have any doubt, they explain it. The environment is very friendly, and you won’t find such a good atmosphere anywhere else for such a low fee.”",
   },
   {
-    name: "Amit Verma",
-    role: "Backend Developer",
-    company: "Wipro",
-    image: student3,
+    name: "PREKSHA GAUR",
+    image: PREKSHA,
     rating: 5,
-    text: "The backend development course was incredibly detailed. Real-world projects prepared me for actual industry challenges. Got placed at Wipro with a 40% salary hike. Highly recommend FSL!",
+    text: "I recently attended the 'Hands-On Training on Tailwind CSS and React for Real-World Projects' workshop. The experience was amazing! Rohit Jain Sir and Dheeraj Sir were fantastic instructors who made learning fun, interactive, and insightful. They explained complex concepts in a simple and easy-to-understand way and were always available to help whenever we faced challenges. I gained a lot of practical knowledge that I can apply to real-world projects. Overall, it was a highly rewarding experience, and I’m grateful to both Sirs for their guidance!"
   },
   {
-    name: "Sneha Joshi",
-    role: "Software Engineer",
-    company: "Capgemini",
-    image: student2,
+    name: "RJ Upender swami",
+    image: RJ,
     rating: 5,
-    text: "FSL's placement assistance is exceptional. They prepare you not just technically but also for interviews. Cleared my Capgemini interview in the first attempt thanks to mock sessions!",
+    text: "Every concept is explained in a simple way, making you proficient in full stack development. Practical projects and experienced mentors prepare you to be industry-ready.",
   },
   {
-    name: "Vikram Singh",
-    role: "React Developer",
-    company: "HCL Technologies",
-    image: student3,
+    name: "Aakash Sirswa",
+    image: Aakash,
     rating: 5,
-    text: "Amazing learning environment with industry-standard tools. The React course taught me everything from basics to advanced state management. Now working at HCL with a great package!",
+    text: "It was a pleasure getting trained under Rohit sir, He is an IT giant and an expert level trainer.I started my development journey from here. Learnt to make responsive webpages, learnt javascript react in deep.Rohit sir puts great focus on practical learning. The past part of this institute is they will support you immensely in your career journeythanks a lot for your teaching sir",
   },
   {
-    name: "Kavya Reddy",
-    role: "Full Stack Engineer",
-    company: "Tech Mahindra",
-    image: student1,
+    name: "Pradeep Yadav",
+    image: Pradeep ,
     rating: 5,
-    text: "Joining FSL was the best decision of my life. The curriculum is up-to-date with current industry needs. Got a full-stack role at Tech Mahindra. Forever grateful to the FSL team!",
+    text: "I had the privilege of enrolling in the Full Stack Learning program in Jaipur, and I can unequivocally affirm that it has been an enlightening experience. Mr. Rohit Jain sir, is a great teacher. He taught me everything throughout whole course and it was really cool.",
   },
 ];
 
@@ -70,9 +67,8 @@ function TestimonialCard({ t, index }: { t: typeof testimonials[0]; index: numbe
   return (
     <div
       ref={ref}
-      className={`group bg-card rounded-2xl p-6 border border-border shadow-md card-hover transition-all duration-500 ${
-        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}
+      className={`group bg-card rounded-2xl p-6 border border-border shadow-md card-hover transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
       style={{ transitionDelay: `${index * 100}ms` }}
     >
       <Quote className="text-brand-orange mb-4 opacity-60" size={32} />
@@ -88,7 +84,7 @@ function TestimonialCard({ t, index }: { t: typeof testimonials[0]; index: numbe
         </div>
         <div>
           <p className="font-semibold text-foreground text-sm">{t.name}</p>
-          <p className="text-xs text-brand-blue">{t.role} <span className="text-muted-foreground">@ {t.company}</span></p>
+          <p className="text-xs text-brand-blue">{t.role} <span className="text-muted-foreground"></span></p>
         </div>
       </div>
     </div>

@@ -63,7 +63,7 @@ export default function EnquiryForm() {
         >
           {/* Contact Info */}
           <div className="lg:col-span-2 space-y-6">
-            <div className="gradient-brand rounded-2xl p-6 text-primary-foreground">
+            <div className="bg-[#1b8ebb] rounded-2xl p-6 text-primary-foreground">
               <h3 className="text-xl font-bold mb-2">Let's Connect!</h3>
               <p className="text-primary-foreground/80 text-sm mb-6">
                 Have questions? Our expert counselors are here to guide you.
@@ -194,7 +194,7 @@ export default function EnquiryForm() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2 py-4 rounded-xl font-semibold text-primary-foreground gradient-brand hover:opacity-90 hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="w-full flex items-center justify-center gap-2 py-4 rounded-xl font-semibold text-primary-foreground bg-[#f16b3d] hover:opacity-90 hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
                   <Send size={18} />
                   Submit Enquiry

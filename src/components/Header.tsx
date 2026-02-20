@@ -59,7 +59,7 @@ export default function Header() {
             <img
               src={logo}
               alt="FullStack Learning Logo"
-              className="h-10 md:h-14 w-auto transition-transform duration-300 group-hover:scale-105"
+              className="h-20 md:h-20 w-auto transition-transform duration-300 group-hover:scale-105"
             />
           </a>
 
