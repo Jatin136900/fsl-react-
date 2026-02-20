@@ -43,11 +43,10 @@ export default function Header() {
 
       {/* Main header */}
       <header
-        className={`sticky top-0 z-50 w-full transition-all duration-400 ${
-          scrolled
+        className={`sticky top-0 z-50 w-full transition-all duration-400 ${scrolled
             ? "bg-background/95 backdrop-blur-md shadow-lg"
             : "bg-background shadow-sm"
-        }`}
+          }`}
       >
         <div className="container mx-auto px-4 flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
@@ -59,7 +58,17 @@ export default function Header() {
             <img
               src={logo}
               alt="FullStack Learning Logo"
-              className="h-20 md:h-20 w-auto transition-transform duration-300 group-hover:scale-105"
+              className="
+    h-[60px] 
+    sm:h-[70px] 
+    md:h-[80px] 
+    lg:h-[90px] 
+    xl:h-[100px] 
+    w-auto 
+    transition-transform 
+    duration-300 
+    group-hover:scale-105
+  "
             />
           </a>
 
@@ -96,9 +105,8 @@ export default function Header() {
 
         {/* Mobile Nav */}
         <div
-          className={`md:hidden overflow-hidden transition-all duration-300 bg-background border-t border-border ${
-            mobileOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-          }`}
+          className={`md:hidden overflow-hidden transition-all duration-300 bg-background border-t border-border ${mobileOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+            }`}
         >
           <nav className="container mx-auto px-4 py-4 flex flex-col gap-2">
             {navLinks.map((link) => (
