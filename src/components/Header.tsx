@@ -59,11 +59,11 @@ export default function Header() {
               src={logo}
               alt="FullStack Learning Logo"
               className="
-    h-[60px] 
+    h-[68px] 
     sm:h-[70px] 
     md:h-[80px] 
     lg:h-[90px] 
-    xl:h-[100px] 
+    xl:h-[87px] 
     w-auto 
     transition-transform 
     duration-300 
