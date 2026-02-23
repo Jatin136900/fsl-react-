@@ -11,7 +11,7 @@ const placedStudents = [
   { name: "Pooja Gupta", role: "Frontend Dev", company: "Infosys", package: "5.8 LPA", location: "Pune", image: placed1 },
   { name: "Nikhil Sharma", role: "Full Stack Dev", company: "Wipro", package: "7.2 LPA", location: "Hyderabad", image: placed2 },
   { name: "Anita Singh", role: "React Developer", company: "HCL", package: "6.0 LPA", location: "Noida", image: student2 },
-  { name: "Rohit Jain", role: "Backend Engineer", company: "Capgemini", package: "8.0 LPA", location: "Mumbai", image: student3 },
+  { name: "vishal singh", role: "Backend Engineer", company: "Capgemini", package: "8.0 LPA", location: "Mumbai", image: student3 },
   { name: "Meenal Rathore", role: "UI/UX Engineer", company: "Tech Mahindra", package: "5.5 LPA", location: "Jaipur", image: placed1 },
 ];
 

@@ -17,7 +17,7 @@ const testimonials = [
     name: "Jatin Verma",
     image: Jatin,
     rating: 5,
-    text: "I joined the coaching to learn Frontend Development and UI/UX Design, and it has been a great experience. From the basics of HTML, CSS, and JavaScript to advanced animations and responsive design, everything was taught in a clear and structured way. In UI/UX Design, we focused on user research, wireframing, and prototyping with a hands-on approach. The faculty was supportive, doubts were always resolved on time, and we got exposure to real-life projects. For anyone looking to start a career in design and development, this coaching is an excellent place to begin.",
+    text: "I joined the coaching to learn Frontend Development and UI/UX Design, and it has been a great experience. From the basics of HTML, CSS, and JavaScript to advanced animations and responsive design, everything was taught in a clear and structured way.",
   },
   {
     name: "Dron Pareek",
