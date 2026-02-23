@@ -4,12 +4,12 @@ import student1 from "@/assets/student1.jpg";
 import student2 from "@/assets/student2.jpg";
 import student3 from "@/assets/student3.jpg";
 
-import Jatin from '../../images/jatin.jpeg'
-import Dron from '../../images/dron.png'
-import PREKSHA from '../../images/PREKSHA.png'
-import RJ from '../../images/RJ.png'
-import Aakash from '../../images/Aakash.png'
-import Pradeep from '../../images/Pradeep.png'
+const Jatin = "/images/jatin.jpeg";
+const Dron = "/images/dron.png";
+const PREKSHA = "/images/PREKSHA.png";
+const RJ = "/images/RJ.png";
+const Aakash = "/images/Aakash.png";
+const Pradeep = "/images/Pradeep.png";
 
 
 
