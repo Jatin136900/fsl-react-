@@ -55,6 +55,7 @@ const testimonials = [
 function TestimonialCard({ t, index }: { t: typeof testimonials[0]; index: number }) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
+  const [imgSrc, setImgSrc] = useState<string>(t.image);
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) setVisible(true); },
@@ -80,7 +81,16 @@ function TestimonialCard({ t, index }: { t: typeof testimonials[0]; index: numbe
       </div>
       <div className="flex items-center gap-3">
         <div className="w-12 h-12 rounded-full overflow-hidden ring-2 ring-brand-orange/30 group-hover:ring-brand-orange transition-all duration-300">
-          <img src={t.image} alt={t.name} className="w-full h-full object-cover" />
+          <img
+            src={imgSrc}
+            alt={t.name}
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              // fallback to bundled student image if public image fails to load
+              const target = e.currentTarget as HTMLImageElement;
+              if (target.src !== student1) setImgSrc(student1);
+            }}
+          />
         </div>
         <div>
           <p className="font-semibold text-foreground text-sm">{t.name}</p>
