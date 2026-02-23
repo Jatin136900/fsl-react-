@@ -1,5 +1,8 @@
-import logo from "@/assets/logo.png";
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin, Youtube, ArrowRight } from "lucide-react";
+import bundledLogo from "@/assets/logo.png";
+
+const logoSrc = "/images/logo.png";
+const logoSrcSet = "/images/logo@2x.png 2x, /images/logo.png 1x";
 
 const footerLinks = {
   "Quick Links": [
@@ -60,7 +63,24 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <img src={logo} alt="FullStack Learning" className="h-16 w-auto mb-4 brightness-200" />
+            <img
+              src={logoSrc}
+              srcSet={logoSrcSet}
+              alt="FullStack Learning"
+              loading="eager"
+              decoding="async"
+              style={{ imageRendering: "auto" }}
+              onError={(e) => {
+                const t = e.currentTarget as HTMLImageElement;
+                if (!t.dataset.fallback) {
+                  t.src = bundledLogo;
+                  t.removeAttribute("srcset");
+                  t.dataset.fallback = "1";
+                }
+              }}
+              className="h-16 w-auto mb-4"
+            />
+
             <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
               FSL is Rajasthan's premier full stack development training institute, helping students launch successful tech careers since 2018.
             </p>
@@ -138,3 +158,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+ 

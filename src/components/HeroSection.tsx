@@ -92,9 +92,8 @@ export default function HeroSection() {
             key={i}
             src={src}
             alt={`slide-${i}`}
-            className={`w-full h-full object-cover absolute inset-0 transition-opacity duration-700 ${
-              i === slideIndex ? "opacity-100" : "opacity-0"
-            }`}
+            className={`w-full h-full object-cover absolute inset-0 transition-opacity duration-700 ${i === slideIndex ? "opacity-100" : "opacity-0"
+              }`}
           />
         ))}
         <div className="absolute inset-0 bg-gradient-to-r from-brand-blue-dark/90 via-brand-blue/75 to-brand-orange/60" />
@@ -118,9 +117,8 @@ export default function HeroSection() {
 
           {/* Animated word */}
           <h1
-            className={`text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 transition-all duration-400 ${
-              visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-            }`}
+            className={`text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 transition-all duration-400 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              }`}
             style={{ color: "hsl(var(--brand-orange))" }}
           >
             {words[wordIndex]}
@@ -139,8 +137,9 @@ export default function HeroSection() {
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 mb-16 animate-slide-up" style={{ animationDelay: "0.4s" }}>
             <a
-              href="#enquiry"
-              onClick={(e) => { e.preventDefault(); document.querySelector("#enquiry")?.scrollIntoView({ behavior: "smooth" }); }}
+              href="https://registration-form-1-mbw5.onrender.com/registration"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-primary-foreground bg-brand-orange hover:bg-brand-orange-dark transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg"
             >
               Join Now
